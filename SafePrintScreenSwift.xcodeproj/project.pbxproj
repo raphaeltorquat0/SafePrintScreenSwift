@@ -11,6 +11,9 @@
 		3F8A8BCC2A0AE91700EDE4BB /* SafePrintScreenSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8A8BC12A0AE91700EDE4BB /* SafePrintScreenSwift.framework */; };
 		3F8A8BD12A0AE91700EDE4BB /* SafePrintScreenSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A8BD02A0AE91700EDE4BB /* SafePrintScreenSwiftTests.swift */; };
 		3F8A8BD22A0AE91700EDE4BB /* SafePrintScreenSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F8A8BC42A0AE91700EDE4BB /* SafePrintScreenSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F8A8BDC2A0AE92D00EDE4BB /* SafePrintScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A8BDB2A0AE92D00EDE4BB /* SafePrintScreenManager.swift */; };
+		3F8A8BDF2A0AEC1E00EDE4BB /* SafePrintScreenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A8BDE2A0AEC1E00EDE4BB /* SafePrintScreenDelegate.swift */; };
+		3F8A8BE22A0AECA100EDE4BB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A8BE12A0AECA100EDE4BB /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		3F8A8BC52A0AE91700EDE4BB /* SafePrintScreenSwift.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SafePrintScreenSwift.docc; sourceTree = "<group>"; };
 		3F8A8BCB2A0AE91700EDE4BB /* SafePrintScreenSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafePrintScreenSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8A8BD02A0AE91700EDE4BB /* SafePrintScreenSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafePrintScreenSwiftTests.swift; sourceTree = "<group>"; };
+		3F8A8BDB2A0AE92D00EDE4BB /* SafePrintScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafePrintScreenManager.swift; sourceTree = "<group>"; };
+		3F8A8BDE2A0AEC1E00EDE4BB /* SafePrintScreenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafePrintScreenDelegate.swift; sourceTree = "<group>"; };
+		3F8A8BE12A0AECA100EDE4BB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +77,11 @@
 		3F8A8BC32A0AE91700EDE4BB /* SafePrintScreenSwift */ = {
 			isa = PBXGroup;
 			children = (
+				3F8A8BE02A0AEC8F00EDE4BB /* supports */,
+				3F8A8BDD2A0AEC0800EDE4BB /* protocol */,
 				3F8A8BC42A0AE91700EDE4BB /* SafePrintScreenSwift.h */,
 				3F8A8BC52A0AE91700EDE4BB /* SafePrintScreenSwift.docc */,
+				3F8A8BDB2A0AE92D00EDE4BB /* SafePrintScreenManager.swift */,
 			);
 			path = SafePrintScreenSwift;
 			sourceTree = "<group>";
@@ -83,6 +92,22 @@
 				3F8A8BD02A0AE91700EDE4BB /* SafePrintScreenSwiftTests.swift */,
 			);
 			path = SafePrintScreenSwiftTests;
+			sourceTree = "<group>";
+		};
+		3F8A8BDD2A0AEC0800EDE4BB /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				3F8A8BDE2A0AEC1E00EDE4BB /* SafePrintScreenDelegate.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		3F8A8BE02A0AEC8F00EDE4BB /* supports */ = {
+			isa = PBXGroup;
+			children = (
+				3F8A8BE12A0AECA100EDE4BB /* UIView+Extension.swift */,
+			);
+			path = supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8A8BDC2A0AE92D00EDE4BB /* SafePrintScreenManager.swift in Sources */,
 				3F8A8BC62A0AE91700EDE4BB /* SafePrintScreenSwift.docc in Sources */,
+				3F8A8BE22A0AECA100EDE4BB /* UIView+Extension.swift in Sources */,
+				3F8A8BDF2A0AEC1E00EDE4BB /* SafePrintScreenDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +424,7 @@
 		3F8A8BD92A0AE91700EDE4BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NXZ6YP6W9M;
@@ -412,6 +441,7 @@
 		3F8A8BDA2A0AE91700EDE4BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NXZ6YP6W9M;
