@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0385DD2A0DD8CF00D6ABF4 /* Photos+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0385DC2A0DD8CF00D6ABF4 /* Photos+Extension.swift */; };
 		3F8A8BC62A0AE91700EDE4BB /* SafePrintScreenSwift.docc in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A8BC52A0AE91700EDE4BB /* SafePrintScreenSwift.docc */; };
 		3F8A8BCC2A0AE91700EDE4BB /* SafePrintScreenSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8A8BC12A0AE91700EDE4BB /* SafePrintScreenSwift.framework */; };
 		3F8A8BD12A0AE91700EDE4BB /* SafePrintScreenSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A8BD02A0AE91700EDE4BB /* SafePrintScreenSwiftTests.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F0385DC2A0DD8CF00D6ABF4 /* Photos+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photos+Extension.swift"; sourceTree = "<group>"; };
 		3F8A8BC12A0AE91700EDE4BB /* SafePrintScreenSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SafePrintScreenSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8A8BC42A0AE91700EDE4BB /* SafePrintScreenSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafePrintScreenSwift.h; sourceTree = "<group>"; };
 		3F8A8BC52A0AE91700EDE4BB /* SafePrintScreenSwift.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SafePrintScreenSwift.docc; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				3F8A8BE12A0AECA100EDE4BB /* UIView+Extension.swift */,
+				3F0385DC2A0DD8CF00D6ABF4 /* Photos+Extension.swift */,
 			);
 			path = supports;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0385DD2A0DD8CF00D6ABF4 /* Photos+Extension.swift in Sources */,
 				3F8A8BDC2A0AE92D00EDE4BB /* SafePrintScreenManager.swift in Sources */,
 				3F8A8BC62A0AE91700EDE4BB /* SafePrintScreenSwift.docc in Sources */,
 				3F8A8BE22A0AECA100EDE4BB /* UIView+Extension.swift in Sources */,
@@ -377,7 +381,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "we need permission to your photo library.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,7 +411,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "we need permission to your photo library.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

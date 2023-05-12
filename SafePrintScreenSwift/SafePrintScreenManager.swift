@@ -28,10 +28,6 @@ public class SafePrintScreenManager {
         view.setSafePrintScreenCaptureProtection()
     }
     
-     /*
-        The follow methods are only for demo ok?
-     */
-    
     public func disableSafePintScreenShot(`for` window:UIWindow) {
         window.removeGTView()
     }
@@ -41,13 +37,14 @@ public class SafePrintScreenManager {
     }
     
     public func listenerForScreenReports() {
+        guard var _recordingObservation = _recordingObservation else { return }
         _recordingObservation = UIScreen.main.observe(\UIScreen.isCaptured, options: [.new]) { [weak self] screen, change in
             let isRecording = change.newValue ?? false
             
             if isRecording {
-                self?._screenRecordDelegate?.screen(screen, didRecordEnded: isRecording)
+                self!._screenRecordDelegate?.screen(screen, didRecordEnded: isRecording)
             } else {
-                self?._screenRecordDelegate?.screen(screen, didRecordEnded: isRecording)
+                self!._screenRecordDelegate?.screen(screen, didRecordEnded: isRecording)
             }
         }
     }
