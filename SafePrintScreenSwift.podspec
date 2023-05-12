@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SafePrintScreenSwift"
-  spec.version      = "0.0.1"
-  spec.summary      = "SafePrintScreenSwift is a Swift library that allows you to block the screen capture functionality in an iOS app. By incorporating SafePrintScreenSwift into your project, you can prevent users from taking screenshots within your app, thus protecting sensitive information and private data. The library is easy to use and provides a simple and effective solution to enhance the security of your app."
+  spec.version      = "0.2"
+  spec.summary      = "SafePrintScreenSwift is a Swift library that blocks screen capture in iOS apps, enhancing security by preventing sensitive information from being captured."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+  SafePrintScreenSwift is a Swift library that allows you to block the screen capture functionality in an iOS app. By incorporating SafePrintScreenSwift into your project, you can prevent users from taking screenshots within your app, thus protecting sensitive information and private data. The library is easy to use and provides a simple and effective solution to enhance the security of your app.
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/SafePrintScreenSwift"
+  spec.homepage     = "https://github.com/raphaeltorquat0/SafePrintScreenSwift/blob/main/README.md"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,8 +39,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  #spec.license      = "MIT (example)"
+   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -79,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/SafePrintScreenSwift.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/raphaeltorquat0/SafePrintScreenSwift.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
